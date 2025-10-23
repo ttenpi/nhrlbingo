@@ -30,9 +30,13 @@
 <style>
   .bingoCard {
     display: grid;
-    grid-template-columns: repeat(5, minmax(5rem, 1fr));
+    grid-template-columns: repeat(5, minmax(2.4rem, 1fr));
+    grid-auto-rows: minmax(2.4rem, 1fr);
+    /* allow horizontal scrolling on very small screens while keeping 5 columns */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     grid-template-rows: repeat(5, minmax(5rem, 1fr));
-    gap: 0.5rem;
-    padding: 1rem;
+    gap: .2rem;
+    padding: .2rem;
   }
 </style>

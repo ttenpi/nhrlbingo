@@ -14,7 +14,7 @@
 <style>
   .bingoBox {
     border: 4px solid var(--ctp-surface0);
-    width: 6rem;
+    max-width: 6rem;
     height: 6rem;
     display: flex;
     justify-content: center;
