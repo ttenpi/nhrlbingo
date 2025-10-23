@@ -1,6 +1,6 @@
 <template>
   <div class="bingoBox"
-    onclick="this.classList.toggle('is-success'); this.style.borderColor = this.classList.contains('is-success') ? 'var(--c-success)' : ''">
+    @click="($event.currentTarget as HTMLElement | null)?.classList.toggle('is-success')">
     {{ text }}
   </div>
 </template>
@@ -36,5 +36,9 @@
 
   .bingoBox:active {
     background-color: var(--ctp-surface2);
+  }
+
+  .bingoBox.is-success {
+    border-color: var(--c-success);
   }
 </style>
