@@ -1,8 +1,6 @@
 <template>
-  <div
-    class="bingoBox"
-    onclick="this.classList.toggle('is-success'); this.style.borderColor = this.classList.contains('is-success') ? 'var(--c-success)' : ''"
-  >
+  <div class="bingoBox"
+    onclick="this.classList.toggle('is-success'); this.style.borderColor = this.classList.contains('is-success') ? 'var(--c-success)' : ''">
     {{ text }}
   </div>
 </template>
