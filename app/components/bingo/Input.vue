@@ -5,13 +5,16 @@
       {{ new Date().toLocaleString('en-US', { month: 'long' }).toLowerCase() }}
       bingo card
     </label>
-    <form class="bingoInputInputs" @submit.prevent="activate">
+    <form class="bingoInputInputs"
+      @submit.prevent="activate">
       <input id="username" name="username" type="text"
         v-model="username" placeholder="@yourusername"
-        inputmode="text"
-        pattern="^@?[\w._]{2,32}$"
-        required />
-      <button @click="activate" type="submit">Generate</button>
+        inputmode="text" pattern="^@?[\w._]{2,32}$" required
+        autocomplete="off" autocorrect="off"
+        autocapitalize="off" spellcheck="false"
+        data-lpignore data-1p-ignore />
+      <button @click="activate"
+        type="submit">Generate</button>
     </form>
     <!-- <p class="bingoInputDebug">
       <small><code>username: {{ username }}, datevalue:
