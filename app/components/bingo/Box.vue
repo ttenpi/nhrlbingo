@@ -20,7 +20,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0.5rem;
     box-sizing: border-box;
     font-size: 0.9rem;
     line-height: 1rem;
