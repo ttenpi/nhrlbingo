@@ -20,4 +20,5 @@ export default defineNuxtConfig({
     experimental: { disableLocalFallbacks: true, },
   },
   nitro: { static: true, },
+  ssr: false,
 })
