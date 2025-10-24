@@ -17,13 +17,14 @@
         online</small>
     </p>
     <p class="bingoDebug">
-      <small><code>seed: {{ seed }}</code></small>
+      <small><code>bingoLinesChecksum: {{ checksum }}, seed: {{ seed }}</code></small>
     </p>
   </footer>
 </template>
 
 <script setup lang="ts">
   const { seed } = useGetSeed()
+  const { checksum } = useBingoLines()
 </script>
 
 <style>
