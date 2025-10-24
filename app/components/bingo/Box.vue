@@ -1,7 +1,7 @@
 <template>
   <div class="bingoBox"
     @click="($event.currentTarget as HTMLElement | null)?.classList.toggle('is-success')">
-    <twemoji-parse>{{ text }}</twemoji-parse>
+    {{ text }}
   </div>
 </template>
 
@@ -39,9 +39,5 @@
 
   .bingoBox.is-success {
     border-color: var(--c-success);
-  }
-
-  .twemojiParse {
-    display: inline;
   }
 </style>
