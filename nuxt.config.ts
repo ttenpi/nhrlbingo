@@ -4,7 +4,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["@/assets/style/style.css"],
 
-  modules: ['@nuxt/fonts', '@nuxt/icon', '@nuxtjs/color-mode'],
+  modules: [
+    '@nuxt/fonts',
+    '@nuxt/icon',
+    '@nuxtjs/color-mode',
+    'nuxt-twemoji',
+  ],
   colorMode: {
     preference: "system",
     fallback: "latte",
