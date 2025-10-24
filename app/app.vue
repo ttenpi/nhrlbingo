@@ -11,6 +11,8 @@
   body {
     background: var(--ctp-crust);
     color: var(--ctp-text);
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.4;
   }
 
   #__nuxt {

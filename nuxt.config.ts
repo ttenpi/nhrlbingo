@@ -11,9 +11,8 @@ export default defineNuxtConfig({
     classSuffix: "-theme",
   },
   fonts: {
-    providers: {
-      google: false, googleicons: false
-    },
+    priority: ['bunny', 'google'],
+    experimental: { disableLocalFallbacks: true, },
   },
   nitro: { static: true, },
 })
